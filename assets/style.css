@@ -2,21 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
-html {
-    height: 100%;
-    display: flex;
-}
-
+    
 
 
 h1 {
-
     color: #fff;
+    padding-right: 60rem;
 }
 
 h2 {
-    padding-top: 4px;
+    padding-bottom: 10px;
     color: #fff;
 }
 
@@ -28,93 +23,94 @@ h3 {
     flex-wrap: wrap;
 }
 
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    font-style: none;
+}
+
 img {
-    display: flex;
-    width: 250px;
-    height: 250px;
+    height: 225px;
+    width: 384.4px;
+}
 
-
-
+div.view {
+    border: 2px bolid black;
 }
 
 /* header*/
 
 header {
-    display: flex;
-    justify-content: left;
+
+    display: grid;
+    justify-content: center;
     background-color: #2d3436;
-    padding: 3em;
+    padding-top: 3rem;
 
+}
 
+header a {
+    text-decoration: none;
+    font-size: 20px;
 }
 
 header p {
-    max-width: 60vw;
+    max-width: 65rw;
     flex-wrap: nowrap;
-    line-height: 1em;
+    line-height: 2em;
     color: #636e72;
     font-size: 15px;
     font-size: bold;
+    letter-spacing: 1.5px;
+
 
 }
 
+div.dropmenu {
+    max-width: 600px;
+
+
+}
 
 /* drop menu*/
-.dropmenu {
-    display: flex;
+div.dropdown-content {
+    display: grid;
     flex-direction: column;
-}
-
-.dropmenu h2 {
-    text-align: right;
-    color: #fff;
-    font-size: 20px;
-    margin-left: 0;
-    margin-top: 0;
-
-}
-
-.dropmenu ul {
-    text-align: right;
-    color: #fff;
+    text-decoration: none;
     list-style-type: none;
-    font-size: 20px;
-    margin-left: 20rem;
-}
-
-.sign {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}
-
-div.sigh h2 {
-    padding-top: 10rem;
-
+    padding-left: 50rem;
+    grid-area: center;
+    grid-column: 1/1;
+    overflow: hidden;
 }
 
 /*wrapper*/
+
 .wrapper {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    text-align: center;
+
 }
 
 .wrapper h2 {
+    justify-content: center;
     text-align: center;
     color: black;
     font-size: 30px;
     font-weight: 300;
-    padding-left: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 10%;
+
 }
 
 .wrapper p {
+    display: flex;
     justify-content: center;
-    text-align: center;
-    padding-left: 35rem;
+    align-items: center;
     font-size: 20px;
     max-width: 30vw;
-
+    padding-left: 30%;
 
 }
 
@@ -124,6 +120,8 @@ div.sigh h2 {
     text-decoration: none;
     padding-top: 20px;
     padding-bottom: 40px;
+    padding-right: 10%;
+
 }
 
 .link a:nth-child(1) {
@@ -148,66 +146,107 @@ div.sigh h2 {
 /*container*/
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3. 50px);
     
-    padding-left: 2rem;
-    padding-top: 2rem;
-    flex-wrap: wrap;
-
-
 }
 
- article{
+.container article {
+    
     border: 2px solid grey;
-    flex: 1 1 200px
+    width: 384px;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
 
-    
-    
+
+
 }
 
 .container p {
     font-size: 15px;
-    max-width: 15vw;
+    max-width: 30vw;
     padding: 15px;
 }
 
-.button {
+.container .button {
     display: flex;
-    border: 2px 2px solid black;
-    border-bottom: 10px;
-    border-top: 10px;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 
 
 }
+
+.btn {
+    border: 2px solid grey;
+    background-color: white;
+    color: grey;
+    padding: 15px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-style: ridge;
+
+}
+
 
 small {
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    text-align: right;
+    padding-bottom: 2rem;
     padding-left: 10rem;
+
 }
 
 /*footer*/
 
 footer {
     display: flex;
+    justify-content: left;
+
 
 
 }
 
 footer p {
-    font-size: 15px;
-    padding-top: 2rem;
-    padding-left: 1rem;
-
+    font-size: 20px;
 }
 
-.fbutton {
+.fbutton a {
     text-decoration: none;
     justify-content: right;
-    align-items: right;
-    padding-left: 30rem;
-    padding-top: 2rem;
+    text-align: right;
+    padding-left: 60em;
+}
 
+/*footer links*/
+footer a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
+footer a:visited {
+    margin-right: 20px;
+    text-align: center;
+}
+
+/* a links*/
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #7f8fa6;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+    color: #353b48;
 }

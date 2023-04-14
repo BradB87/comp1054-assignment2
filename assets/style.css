@@ -10,7 +10,7 @@ main{
 
 h1 {
     color: #fff;
-
+/* watch spacing and formatting! */ 
     
 }
 
@@ -44,9 +44,9 @@ div.view {
 }
 
 /* header*/
+/* I'd recommend using Flexbox here to create the row of content and align the content vertically within the div */ 
 
-header {
-    
+header { 
     background-color: #2d3436;
     padding-top: 3rem;
     padding-left: 20rem ;
@@ -148,9 +148,12 @@ div.dropdown-content {
 
 /*container*/
 
+/* good choice using grid for this type of layout! */ 
+
 .container {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 400px 400px 400px; /* instead of a fixed track, it may be a good idea to use more flexible units like repeat(3, 1fr); */
+    /* We can also set a width on container and centre horizontally using margin: 0 auto; */
     grid-template-rows: 1fr 1fr 1fr ;
     row-gap:  20px;
     
@@ -160,9 +163,7 @@ main article {
     height: 400px;
     width: 350px;;
     border: 2px solid grey;
-    margin-left: 20rem;
-    
-     
+    margin-left: 20rem; /* remove this margin */    
 }
 
 .container p {
